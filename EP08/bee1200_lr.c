@@ -1,9 +1,9 @@
-//OBS. SÛ consegui fazer atÈ aqui no perÌodo disponÌvel em sala.
+//OBS. S√≥ consegui fazer at√© aqui no per√≠odo dispon√≠vel em sala.
 
 #include <stdio.h>
 
-/*Becrowd 1200 peraÁıes em ABP I
-¡rvores bin·rias de busca*/
+/*Becrowd 1200 pera√ß√µes em ABP I
+√Årvores bin√°rias de busca*/
 
 //fonte livro Algoritmos em C
 struct cel {
