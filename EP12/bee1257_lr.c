@@ -13,6 +13,7 @@ int main() {
     scanf("%d", &N);
 
     for(i=0;i<N;i++){
+        scanf("%d", &L);
         for(j=0;j<L;j++){
             scanf("%s", &st);
             tam=strlen(st);
@@ -26,7 +27,7 @@ int main() {
             }
         }
 
-    printf("%d", hash_tmp[N]);
+    printf("%d\n", hash_tmp[N]);
     }
 
     return 0;
