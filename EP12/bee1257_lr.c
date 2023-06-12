@@ -5,29 +5,42 @@
 
 int main() {
 
-    int N, L, hash_tmp[50];
-    int alf, pos, ele, tam, hash[50];
-    int i, j, k=0, m;
-    char st[50];
+    int N, L, hash_total=0;
+    int alf, pos, ele, tam;
+    int i, j, k=0, m, n;
+    char st[52];
 
     scanf("%d", &N);
 
     for(i=0;i<N;i++){
         scanf("%d", &L);
+
+        hash_total=0;
+
         for(j=0;j<L;j++){
-            scanf("%s", &st);
+            scanf("%s", st);
             tam=strlen(st);
+            //printf("tam %d\n", tam);
+
 
             for(m=0;m<tam;m++){
                     alf=st[m]-65;
-                    ele=L;
+                    //printf("alf %d\n", alf);
+                    ele=j;
+                    //printf("ele %d\n", ele);
                     pos=m;
-                    hash[m]=((alf+ele)+pos);
-                    hash_tmp[N]=hash_tmp[N]+hash[m];
+                   // printf("pos %d\n", pos);
+                    //hash[m]=((alf+ele)+pos);
+                    //printf("hash %d\n", hash[m]);
+                    hash_total+=((alf+ele)+pos);
             }
         }
 
-    printf("%d\n", hash_tmp[N]);
+        printf("%d\n", hash_total);
+        //limpando vetores
+        for(n=0;n<50;n++){
+            st[n]='\0';
+        }
     }
 
     return 0;
